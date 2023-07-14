@@ -8,6 +8,12 @@ public class MainMenu : MonoBehaviour
     public void NextScene(string s)
     {
         SceneManager.LoadScene(s);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Confirm");
+    }
+
+    public void UISound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Confirm");
     }
 
     public void Quit()
