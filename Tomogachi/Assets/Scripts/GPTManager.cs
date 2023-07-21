@@ -27,7 +27,11 @@ public class GPTManager: MonoBehaviour
     public async void AskChatGPT(string newText)
     {
         ChatMessage newMessage = new ChatMessage();
-        newMessage.Content = "Act as a funny pet, resonding to: " + newText;
+        newMessage.Content = "Act as a pet-like personality in a video game, similar to if a tomogachi could speak. " +
+            "You have a childish, cute, curious, and sometimes clever personality." +
+            "In this video game, you have a happiness meter that ranges from 0 to 1. Right now, your happiness is 0.5; act accordingly" +
+            "Respond to conversational statements from a person with short but meaningful responses." +
+            "Respond to: " + newText;
         newMessage.Role = "user";
 
         messages.Add(newMessage);
