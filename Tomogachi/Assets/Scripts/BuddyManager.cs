@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BuddyManager : MonoBehaviour
 {
-    [SerializeField] float happiness = 1f; // value between 0 and 1
+    public float happiness = 1f; // value between 0 and 1
     [SerializeField] Animator mouthAnim;
     public bool isTalking = false;
     private Emotion currentEmotion = Emotion.happy;
